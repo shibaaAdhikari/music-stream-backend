@@ -15,7 +15,7 @@ const signUpHandler = async (req, reply) => {
 
 const signInHandler = async (req, reply) => {
   try {
-    const { users } = req.server;
+    const { User } = req.server;
     const { email, password } = req.body;
 
     const user = await User.findOne({
